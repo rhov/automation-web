@@ -1,5 +1,6 @@
 /// <reference types="cypress"/>
 const { faker } = require('@faker-js/faker');
+const { expect } = require('chai');
 
 describe('Automation exercise', () => {
     it.only('Cadastrar usuário', () => {
@@ -46,10 +47,7 @@ describe('Automation exercise', () => {
         // Assert
         cy.url().should('includes','account_created');
         cy.contains('b','Account Created!');
-
-
-
-
+        
 
 
     });

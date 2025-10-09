@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rhov/automation-web/issues"
   },
-  "homepage": "https://github.com/rhov/automation-web#readme"
+  "homepage": "https://github.com/rhov/automation-web#readme",
+  "devDependencies": {
+    "chai": "^6.2.0"
+  }
 }

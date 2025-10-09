@@ -3,7 +3,7 @@ const { faker } = require('@faker-js/faker');
 const { expect } = require('chai');
 
 describe('Automation exercise', () => {
-    it.only('Cadastrar usuário', () => {
+    it('Cadastrar usuário', () => {
         const timestamp = new Date().getTime();
         // Altera a responsividade
         cy.viewport('samsung-s10');
@@ -47,7 +47,7 @@ describe('Automation exercise', () => {
         // Assert
         cy.url().should('includes','account_created');
         cy.contains('b','Account Created!');
-        
+
 
 
     });

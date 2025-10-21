@@ -17,4 +17,3 @@ class products {
 
 module.exports = new products();
 
-// 9. Verifique se os detalhes estão visíveis: nome do produto, categoria, preço, disponibilidade, condição, marca

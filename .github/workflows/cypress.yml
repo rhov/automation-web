@@ -29,10 +29,6 @@ jobs:
       - name: Run Cypress tests (headless)
         run: npx cypress run
 
-      - name: Generate consolidated Mochawesome HTML report
-        run: |
-          npx mochawesome-merge cypress/reports/*.json > cypress/reports/report.json
-          npx mochawesome-report-generator cypress/reports/report.json -o cypress/reports/mochawesome.html
 
       - name: Upload Mochawesome Report
         uses: actions/upload-artifact@v4

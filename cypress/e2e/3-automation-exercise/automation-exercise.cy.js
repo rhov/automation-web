@@ -56,7 +56,7 @@ describe('Automation exercise', () => {
         cy.loginUsuario();
     });
 
-    it.only('Contact us', () => {
+    it('Contact us', () => {
         cy.log(`FILL THE FORM ${faker.person.fullName()}`);
         cy.get('a[href="/contact_us"]').click();
         cy.get('input[data-qa="name"]').type(faker.person.fullName());
